@@ -1,13 +1,29 @@
-# Cifras da Missa — iPad
+# Cifras da Missa — Capela Militar BNN
 
-Projeto estático para GitHub Pages, otimizado para iPad em modo vertical.
+Versão com **painel visual e identidade institucional**, otimizada para GitHub Pages e uso em **iPad na vertical**.
 
-## Módulos
-- `violao.html`: letra + cifras, transposição por semitom ou seleção direta de tom.
-- `canto.html`: somente letras.
+## O que há nesta versão
+- Visual reforçado com elementos da **Marinha do Brasil**, **3º Distrito Naval**, **Capela Militar**, **Ordinariado Militar do Brasil**, **Serviço Religioso da Marinha**, **Equipe de Música** e **Jubileu**.
+- Página inicial mais bonita, com dois acessos diretos:
+  - `violao.html`
+  - `canto.html`
+- Cabeçalhos, menu lateral e rodapés com identidade visual mais consistente.
+- Preservação do funcionamento anterior:
+  - repertório em HTML real;
+  - alinhamento entre letra e cifra;
+  - ajuste automático para caber na tela;
+  - mudança automática de tom no módulo Violão.
 
-## Layout
-O sistema tenta uma coluna primeiro. Se a música exigir fonte pequena demais, muda automaticamente para duas colunas, dividindo por blocos e mantendo cifra e letra juntas.
+## Estrutura
+- `index.html` — página inicial
+- `violao.html` — módulo para quem toca
+- `canto.html` — módulo para quem canta
+- `css/styles.css` — layout e identidade visual
+- `js/data.js` — repertório e dados da missa
+- `js/app.js` — navegação, ajuste de página e transposição
+- `assets/` — logos, brasões e imagens
+- `README.md`
+- `PROMPT-PROJETO.md`
 
 ## Publicação
-Não exige build, Node ou bibliotecas externas. Publique os arquivos diretamente no GitHub Pages.
+Publique diretamente no GitHub Pages, pela branch `main` e pasta `/(root)`.

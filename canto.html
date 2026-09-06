@@ -1,26 +1,114 @@
-<!doctype html><html lang="pt-BR"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes"><meta name="theme-color" content="#082c52">
-<title>Canto — Cifras da Missa</title><link rel="stylesheet" href="css/styles.css"></head>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#082a4f">
+  <title>Canto — Cifras da Missa</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
 <body data-mode="singer">
-<div class="site-shell"><main class="sheet">
-<header class="song-head"><div class="song-number" id="songNumber">01</div><div><div class="song-role" id="songRole"></div><div class="song-title" id="songTitle"></div></div><div class="head-right"><div id="keyPanel" hidden></div><div class="counter" id="songCounter"></div></div></header>
-<section class="song-body" id="songStage"></section></main>
-<nav class="controls"><button class="ctrl" id="prevSong"><span class="arrow">‹</span><span class="txt">Anterior</span></button><label class="ctrl main" for="menuToggle">☰ <span class="txt">Repertório</span></label><button class="ctrl" id="nextSong"><span class="txt">Próxima</span><span class="arrow">›</span></button></nav></div>
+  <div class="app-shell">
+    <main class="app-sheet">
+
+      <header class="top-banner">
+        <div class="banner-left">
+          <div class="banner-crest"><img src="assets/equipe-musica-simbolo.png" alt="Equipe de Música"></div>
+          <div class="banner-copy">
+            <h1>Cifras da Missa</h1>
+            <div class="celebration">23º Domingo do Tempo Comum</div>
+            <div class="place">Módulo Canto · Capela Militar da Base Naval de Natal</div>
+          </div>
+        </div>
+        <div></div>
+        <div class="banner-logos">
+          <div class="mini-badge light"><img src="assets/brasao-capela.png" alt=""></div>
+          <div class="mini-badge light"><img src="assets/ordinariado-militar.png" alt=""></div>
+          <div class="mini-badge light"><img src="assets/servico-religioso-marinha.png" alt=""></div>
+          <div class="mini-badge light"><img src="assets/brasao-3dn.png" alt=""></div>
+          <div class="mini-badge"><img src="assets/marinha-do-brasil-branco.png" alt=""></div>
+        </div>
+      </header>
+
+      <header class="song-head">
+        <div class="song-number" id="songNumber">01</div>
+        <div>
+          <div class="song-role" id="songRole"></div>
+          <div class="song-title" id="songTitle"></div>
+        </div>
+        <div class="head-right">
+          <div id="keyPanel" hidden></div>
+          <div class="counter" id="songCounter"></div>
+        </div>
+      </header>
+
+
+      <div class="theme-ribbon">
+        <span class="theme-chip gold">Capela Militar São Pedro Pescador</span>
+        <span class="theme-chip">Base Naval de Natal</span>
+        <span class="theme-chip">Marinha do Brasil</span>
+        <span class="theme-chip">Comando do 3º Distrito Naval</span>
+      </div>
+
+
+      <section class="song-body" id="songStage"></section>
+
+
+      <footer class="app-footer">
+        <div class="footer-copy">
+          <strong>Modo Canto</strong> · Repertório da Missa · Capela Militar da Base Naval de Natal
+        </div>
+        <div class="footer-emblems">
+          <div class="mini-badge light"><img src="assets/simbolo-marinha-colorido.png" alt=""></div>
+          <div class="mini-badge light"><img src="assets/brasao-capela.png" alt=""></div>
+          <div class="mini-badge light"><img src="assets/brasao-3dn.png" alt=""></div>
+        </div>
+      </footer>
+
+
+    </main>
+
+    <nav class="controls">
+      <button class="ctrl" id="prevSong"><span class="arrow">‹</span><span class="txt">Anterior</span></button>
+      <label class="ctrl main" for="menuToggle">☰ <span class="txt">Repertório</span></label>
+      <button class="ctrl" id="nextSong"><span class="txt">Próxima</span><span class="arrow">›</span></button>
+    </nav>
+  </div>
+
 
 <input type="checkbox" id="menuToggle">
-<label for="menuToggle" class="scrim"></label>
+<label class="scrim" for="menuToggle"></label>
+
 <aside class="drawer">
   <div class="drawer-head">
-    <label for="menuToggle" class="close">×</label>
-    <div class="logo-card"><img src="assets/logo-equipe.png" alt="Equipe de Música"></div>
+    <label class="close" for="menuToggle">×</label>
+    <div class="logo-card">
+      <img src="assets/equipe-musica-completo.png" alt="Equipe de Música">
+    </div>
     <div>
       <h1>Cifras da Missa</h1>
-      <div class="lit-title">23º Domingo do Tempo Comum</div>
-      <div class="date">06 de setembro de 2026</div>
+      <div class="drawer-lit">23º Domingo do Tempo Comum</div>
+      <div class="drawer-date">Capela Militar · Base Naval de Natal · 06SET2026</div>
+      <div class="drawer-sub">Repertório litúrgico com navegação rápida, identidade naval e leitura otimizada para iPad.</div>
     </div>
   </div>
+
+  <div class="drawer-rail">
+    <div class="rail-badge cream"><img src="assets/brasao-capela.png" alt="Capela"></div>
+    <div class="rail-badge cream"><img src="assets/ordinariado-militar.png" alt="Ordinariado Militar"></div>
+    <div class="rail-badge cream"><img src="assets/servico-religioso-marinha.png" alt="Capelania Militar"></div>
+    <div class="rail-badge cream"><img src="assets/brasao-3dn.png" alt="3DN"></div>
+    <div class="rail-badge navy"><img src="assets/logo-3dn-branca.png" alt="Logo 3DN"></div>
+    <div class="rail-badge cream"><img src="assets/marinha-do-brasil.png" alt="Marinha do Brasil"></div>
+    <div class="rail-badge cream"><img src="assets/jubileu-colorido.png" alt="Jubileu"></div>
+  </div>
+
   <nav class="song-menu" id="songMenu"></nav>
 </aside>
 
-<script src="js/data.js"></script><script src="js/app.js"></script></body></html>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
