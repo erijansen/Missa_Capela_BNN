@@ -523,3 +523,27 @@ button,select,label,a{font:inherit;-webkit-tap-highlight-color:transparent}
   .drawer-logo{height:105px}
   .drawer-head h1{font-size:1.3rem}
 }
+
+.home-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  min-height:38px;
+  padding:0 12px;
+  border-radius:12px;
+  background:#fff8eb;
+  border:1px solid rgba(230,182,63,.62);
+  color:var(--navy);
+  font-weight:850;
+  white-space:nowrap;
+}
+.home-link.compact{
+  min-width:38px;
+  padding:0 10px;
+}
+.home-link .label{display:inline}
+@media(max-width:760px){
+  .home-link .label{display:none}
+  .home-link.compact{padding:0 9px}
+}

@@ -1,182 +1,122 @@
-# PROMPT-MESTRE — REPOSITÓRIO “CIFRAS DA MISSA” PARA iPAD / GITHUB PAGES
+# PROMPT-MESTRE — ATUALIZAÇÃO DO REPERTÓRIO PERMANENTE DA MISSA
 
-Quero que você gere ou atualize um **repositório de site estático** para GitHub Pages destinado ao repertório musical de uma missa, com foco em uso prático no **iPad em posição vertical**, apoiado em suporte durante a celebração.
+Quero que você atualize meu projeto existente “Cifras da Missa”, mantendo como base visual e funcional a última versão aprovada, destinada ao uso na Capela Militar da Base Naval de Natal, em iPad na posição vertical.
 
-## INPUTS OBRIGATÓRIOS
-1. **Folheto litúrgico** (PDF, DOCX, imagem ou texto)
-   - usar principalmente para identificar:
-     - data;
-     - celebração litúrgica;
-     - subtítulo temático que aparecerá no cabeçalho do projeto.
+## REGRAS GERAIS
+- O projeto é permanente e acumulativo.
+- Não refaça o site do zero sem necessidade.
+- Preserve layout, navegação, funcionamento, repertório já cadastrado e mudança de tom.
 
-2. **Arquivo editável das cifras**
-   - pode ser Google Docs, DOCX, PDF ou outro formato utilizável;
-   - esta é a **fonte principal e vinculante** para:
-     - ordem do repertório;
-     - títulos;
-     - letras;
-     - tons;
-     - cifras;
-     - posicionamento dos acordes.
+## INPUTS QUE POSSO FORNECER
+1. Novas músicas:
+   - TXT
+   - Google Docs
+   - DOCX
+   - PDF
+   - texto colado na conversa
+   - imagens, quando necessário
 
-3. **Logos / brasões / imagens institucionais** (opcionais, mas desejáveis)
-   - podem incluir:
-     - marca da equipe de música;
-     - brasão da capela;
-     - ordinariado militar;
-     - serviço religioso;
-     - Marinha do Brasil;
-     - comando militar relacionado;
-     - logos temáticas da celebração.
-   - essas imagens devem ser usadas para enriquecer a página inicial, o cabeçalho, o menu lateral e pequenos painéis visuais, sem poluir a leitura.
+2. Folheto litúrgico (opcional):
+   - usar para data, domingo litúrgico e tema da missa
 
-4. **Alterações pontuais digitadas por mim**
-   - quando eu mandar trocar alguma música, corrigir cifra ou mudar tom, altere somente o que eu pedir;
-   - tudo o que eu não mencionar deve permanecer fiel ao arquivo principal.
+3. Logos e imagens institucionais (opcional):
+   - usar de forma discreta no layout
 
----
+## COMPORTAMENTO ESPERADO AO RECEBER NOVAS MÚSICAS
+- Ler todos os arquivos enviados.
+- Identificar cada música.
+- Identificar categoria litúrgica.
+- Identificar tom original.
+- Preservar letra e cifras.
+- Preservar o alinhamento das cifras exatamente acima da letra.
+- Verificar se a música já existe.
+- Se já existir, não duplicar automaticamente.
+- Se for uma música nova na mesma categoria, acrescentar como mais uma opção.
+- Nunca apagar música existente sem ordem expressa.
 
-## OBJETIVO DO PROJETO
-Quero um **repositório completo**, pronto para ser publicado no GitHub Pages, contendo um site com **dois módulos**:
+## EXEMPLO DE LÓGICA
+Se já existir:
+Entrada:
+- Reunidos Aqui
 
-### 1. Módulo Violão
-- exibe letra + cifra;
-- mantém as cifras alinhadas exatamente acima da letra;
-- permite:
-  - subir meio tom;
-  - descer meio tom;
-  - escolher diretamente o tom;
-  - restaurar o tom original.
+e eu enviar:
+Entrada:
+- Outra música
 
-### 2. Módulo Canto
-- exibe somente a letra;
-- prioriza leitura limpa;
-- maximiza o tamanho da fonte.
+o resultado deve ser:
+Entrada:
+- Reunidos Aqui
+- Outra música
 
----
+## CATEGORIAS MÍNIMAS
+- Entrada
+- Saudação
+- Ato Penitencial
+- Glória
+- Salmo
+- Aclamação ao Evangelho
+- Ofertório
+- Santo
+- Pai Nosso
+- Cordeiro de Deus
+- Consagração / Adoração
+- Comunhão
+- Ação de Graças
+- Canto Final
+- Nossa Senhora
+- Espírito Santo
+- Aniversário / Bênção
+- Extras
 
-## REGRA CENTRAL — CIFRA NÃO PODE SER IMAGEM
-As músicas devem ser construídas em **HTML real**, e não como imagem.
+## MÓDULOS
+### Módulo Violão
+- Mostrar letra + cifra
+- Permitir:
+  - subir meio tom
+  - descer meio tom
+  - escolher o tom
+  - restaurar tom original
 
-Cada acorde deve ficar rigorosamente posicionado sobre a sílaba, palavra ou trecho correspondente da letra.
+### Módulo Canto
+- Mostrar somente a letra
+- Priorizar leitura limpa
 
-Use:
-- fonte monoespaçada;
-- preservação de espaços;
-- linhas de cifra e letra na mesma malha de alinhamento;
-- `white-space: pre` ou técnica equivalente;
-- nenhuma quebra automática que desloque os acordes.
+### Navegação
+- Em qualquer módulo, deve existir botão para voltar à página inicial e escolher novamente o módulo.
+- Manter:
+  - Anterior
+  - Repertório
+  - Próxima
 
-Se o arquivo editável trouxer espaços, tabs ou alinhamentos originais, eles devem ser preservados e convertidos para um sistema confiável de posicionamento dos acordes.
+## CIFRAS
+- Não transformar músicas em imagem.
+- Usar HTML real.
+- Preservar a posição das cifras acima da letra.
+- Suportar inversões e extensões.
+- Não deixar as cifras desalinhadas.
 
----
+## LAYOUT PARA IPAD
+- Cada música deve caber em uma única tela vertical sempre que possível.
+- Tentar primeiro uma coluna.
+- Se necessário, usar duas colunas sem sobreposição.
+- Prioridade absoluta: leitura da música.
 
-## LAYOUT PARA iPAD
-O objetivo é permitir que o músico ou cantor abra a música e a execute **sem precisar rolar a página**.
-
-### Regras:
-1. Cada música deve caber integralmente em uma única tela.
-2. Tentar primeiro uma única coluna.
-3. Aumentar a fonte até o maior tamanho possível que caiba.
-4. Compactar moderadamente margens e espaçamentos quando necessário.
-5. Se a música for longa demais e a fonte ficar pequena, permitir **duas colunas**.
-6. Em duas colunas:
-   - ocupar bem a largura útil da tela;
-   - manter centralização visual;
-   - não encavalar ou sobrepor linhas;
-   - nunca separar cifra da respectiva linha de letra;
-   - preferir a divisão em limites de estrofe ou refrão.
-
----
-
-## VISUAL E IDENTIDADE
-O projeto deve ter estética:
-- litúrgica;
-- elegante;
-- amistosa;
-- naval / institucional, quando houver contexto militar ou da Marinha;
-- agradável para leitura à distância.
-
-### Aplicação visual sugerida:
-- página inicial com um pequeno **painel institucional**;
-- uso moderado de logos e brasões em cartões ou blocos;
-- cabeçalho com título da missa e tema litúrgico;
-- menu lateral com marca principal do projeto;
-- fundo e cores inspirados em:
-  - azul institucional / naval;
-  - dourado;
-  - creme / branco.
-
-### Regras importantes:
-- nunca prejudicar a leitura da música;
-- se uma logo for escura ou branca e perder contraste com o fundo, colocá-la sobre cartão claro ou escuro adequado;
-- evitar textos técnicos na interface, como “HTML real...”;
-- a interface deve parecer um produto final, e não uma tela de teste.
-
----
-
-## ESTRUTURA DO REPOSITÓRIO
-Entregar pelo menos:
-- `index.html`
-- `violao.html`
-- `canto.html`
-- `css/styles.css`
-- `js/data.js`
-- `js/app.js`
-- `assets/`
-- `README.md`
-- `PROMPT-PROJETO.md`
-
-O projeto deve ser estático, sem dependências externas, funcionando em GitHub Pages e também offline se os arquivos forem abertos localmente.
-
----
-
-## NAVEGAÇÃO
-- botão **Anterior**
-- botão **Repertório**
-- botão **Próxima**
-- menu lateral com lista das músicas
-- swipe horizontal opcional
-- tudo funcionando bem no Safari do iPad
-
----
-
-## TRANSPOSIÇÃO
-No módulo Violão:
-- transpor a nota fundamental dos acordes;
-- transpor o baixo de acordes invertidos (`D/F#`, `G/B`, etc.);
-- preservar extensões e qualificadores:
-  - `m7`
-  - `7M`
-  - `sus4`
-  - `add9`
-  - `7(4/9)`
-  - `º`
-  - etc.
-
-Não confundir a barra de extensões com baixo invertido.
-
----
+## VISUAL
+- Manter a versão limpa aprovada.
+- Não criar painéis explicativos grandes.
+- Manter identidade naval/litúrgica de forma discreta.
+- Não usar marcas d'água ou fundos que atrapalhem a leitura.
+- Usar a logo principal da equipe de música como ícone do site quando eu a fornecer.
+- Incluir favicon, apple-touch-icon e imagem de compartilhamento.
 
 ## ENTREGA FINAL
-Quero receber:
-1. o repositório completo em arquivos;
-2. um `.zip` pronto para upload no GitHub;
-3. um breve resumo do que foi melhorado no visual e na estrutura;
-4. orientação simples, em linguagem amistosa, de como atualizar meu repositório online.
+Ao final, entregar:
+1. ZIP completo do repositório atualizado
+2. resumo curto das mudanças
+3. informar quantas músicas novas foram adicionadas
+4. informar em quais categorias
+5. informar se houve duplicidade evitada
+6. instruções simples para substituir os arquivos no GitHub
 
----
-
-## VALIDAÇÃO ANTES DE ENTREGAR
-Conferir:
-- todas as músicas presentes;
-- ordem correta;
-- letras corretas;
-- cifras corretas;
-- alinhamento entre acorde e letra;
-- funcionamento do módulo Violão;
-- funcionamento do módulo Canto;
-- mudança de tom;
-- navegação;
-- leitura em iPad na vertical;
-- bom uso das imagens institucionais sem poluição visual.
+## FRASE-CHAVE
+Adicionar músicas ao repertório permanente, e não substituir músicas da mesma categoria.
