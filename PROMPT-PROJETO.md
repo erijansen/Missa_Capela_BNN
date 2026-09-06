@@ -22,7 +22,7 @@ Quero que você atualize meu projeto existente “Cifras da Missa”, mantendo c
 3. Logos e imagens institucionais (opcional):
    - usar de forma discreta no layout
 
-## COMPORTAMENTO ESPERADO AO RECEBER NOVAS MÚSICAS
+## COMPORTAMENTO AO RECEBER NOVAS MÚSICAS
 - Ler todos os arquivos enviados.
 - Identificar cada música.
 - Identificar categoria litúrgica.
@@ -34,19 +34,9 @@ Quero que você atualize meu projeto existente “Cifras da Missa”, mantendo c
 - Se for uma música nova na mesma categoria, acrescentar como mais uma opção.
 - Nunca apagar música existente sem ordem expressa.
 
-## EXEMPLO DE LÓGICA
-Se já existir:
-Entrada:
-- Reunidos Aqui
-
-e eu enviar:
-Entrada:
-- Outra música
-
-o resultado deve ser:
-Entrada:
-- Reunidos Aqui
-- Outra música
+## LÓGICA DO REPERTÓRIO
+Se já existir uma música na categoria e eu enviar outra da mesma categoria, a nova deve ser adicionada como mais uma opção.
+Nunca substituir automaticamente.
 
 ## CATEGORIAS MÍNIMAS
 - Entrada
@@ -106,8 +96,14 @@ Entrada:
 - Não criar painéis explicativos grandes.
 - Manter identidade naval/litúrgica de forma discreta.
 - Não usar marcas d'água ou fundos que atrapalhem a leitura.
-- Usar a logo principal da equipe de música como ícone do site quando eu a fornecer.
-- Incluir favicon, apple-touch-icon e imagem de compartilhamento.
+- Usar a logo principal da equipe de música como:
+  - favicon
+  - apple-touch-icon
+  - imagem de compartilhamento do link
+- Na página inicial:
+  - no canto superior direito do painel principal, usar a **logo branca do Comando do 3º Distrito Naval**
+  - na faixa de símbolos abaixo, usar o **símbolo da Marinha** em vez do logo escrito “Marinha do Brasil”
+- Preservar os demais símbolos institucionais de forma equilibrada e discreta.
 
 ## ENTREGA FINAL
 Ao final, entregar:

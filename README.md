@@ -1,27 +1,27 @@
 # Cifras da Missa — Capela Militar BNN
 
-Versão visual simplificada com duas melhorias novas:
+Versão atualizada com ajuste visual dos logos.
 
-## Novidades desta versão
-- botão para **voltar à escolha do módulo** dentro das páginas:
-  - `violao.html`
-  - `canto.html`
-- inclusão da nova imagem como **logo principal do site**;
-- inclusão da imagem como:
-  - favicon;
-  - apple-touch-icon;
-  - imagem de compartilhamento (`og:image` / `twitter:image`).
+## O que foi alterado nesta versão
+- no card principal da página inicial, o canto superior direito agora utiliza a **logo branca do Comando do 3º Distrito Naval**;
+- na faixa de símbolos abaixo, foi substituído o logo “Marinha do Brasil” pelo **símbolo da Marinha** (somente o emblema circular);
+- o mesmo ajuste do símbolo da Marinha também foi aplicado nas páginas internas, para manter unidade visual;
+- foram preservados:
+  - módulo Violão;
+  - módulo Canto;
+  - botão para voltar à escolha do módulo;
+  - transposição de tom;
+  - layout limpo aprovado;
+  - favicon e imagem de compartilhamento com a logo principal da equipe de música.
 
-## Estrutura
+## Estrutura principal
 - `index.html` — escolha do módulo
 - `violao.html` — módulo com cifras e transposição
-- `canto.html` — módulo com somente letra
-- `assets/site-logo.png` — nova logo principal da página
-- `assets/apple-touch-icon.png`
-- `assets/og-image.png`
+- `canto.html` — módulo somente com letra
+- `assets/logo-3dn-branca-hero.png` — logo branca do 3º Distrito Naval usada no topo da página inicial
+- `assets/simbolo-marinha-home.png` — símbolo da Marinha usado na faixa de identidade
 
-## Observação
-As metatags de compartilhamento já foram incluídas. Em muitos casos, ao compartilhar o link, a plataforma já exibirá a imagem da logo. Se algum serviço demorar a atualizar a prévia, normalmente é apenas cache da plataforma.
-
-## Publicação
-Substitua os arquivos atuais do repositório pelos desta versão e mantenha o GitHub Pages apontando para `main` / `/(root)`.
+## Como atualizar no GitHub
+Substitua os arquivos atuais pelos arquivos desta nova versão e mantenha o GitHub Pages apontando para:
+- branch: `main`
+- pasta: `/(root)`
