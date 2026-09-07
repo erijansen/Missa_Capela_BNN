@@ -626,3 +626,261 @@ button,select,label,a{font:inherit;-webkit-tap-highlight-color:transparent}
     height:72px;
   }
 }
+
+/* ==========================================================
+   HOME v8 — layout fluido, priorizando iPad em modo vertical
+   ========================================================== */
+.home{
+  min-height:100dvh;
+  padding:clamp(12px,2vw,22px);
+}
+.home-shell{
+  width:min(1180px,100%);
+  margin:0 auto;
+  gap:16px;
+}
+.hero{
+  display:block !important;
+  position:relative;
+  padding:clamp(18px,2.8vw,30px) !important;
+  border-radius:30px;
+  min-height:0;
+}
+.hero-main{
+  display:grid;
+  grid-template-columns:220px minmax(0,1fr) 165px;
+  align-items:center;
+  gap:clamp(18px,2.5vw,30px);
+  min-width:0;
+}
+.hero-logo{
+  width:220px;
+  height:220px;
+  min-height:0 !important;
+  padding:14px;
+  border-radius:24px;
+}
+.hero-logo img{
+  width:100%;
+  height:100%;
+  max-width:none;
+  max-height:none;
+  object-fit:contain;
+}
+.hero-copy{
+  min-width:0;
+  align-self:center;
+}
+.hero-copy h1{
+  margin:0;
+  font-size:clamp(2.35rem,5vw,4rem);
+  line-height:.98;
+  white-space:nowrap;
+}
+.hero-copy .place{
+  margin-top:12px;
+  font-size:clamp(1rem,1.75vw,1.35rem);
+  line-height:1.18;
+}
+.hero-copy .mass{
+  margin-top:8px;
+  font-size:clamp(.9rem,1.35vw,1.08rem);
+  line-height:1.3;
+}
+.hero-3dn{
+  width:165px;
+  height:112px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  justify-self:end;
+  overflow:hidden;
+}
+.hero-3dn img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
+.hero > .module-grid{
+  margin-top:22px !important;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  width:100%;
+}
+.hero > .module-grid .module-card{
+  min-width:0;
+  min-height:94px;
+  padding:18px 22px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  border-radius:20px;
+}
+.hero > .module-grid .module-card strong{
+  font-size:1.2rem;
+}
+.hero > .module-grid .module-card small{
+  margin-top:6px;
+  font-size:.92rem;
+  line-height:1.35;
+}
+.identity-strip{
+  padding:14px 18px;
+  gap:12px;
+  flex-wrap:nowrap;
+  overflow:hidden;
+}
+.identity-item{
+  flex:0 1 104px;
+  width:auto;
+  min-width:78px;
+  height:82px;
+}
+.identity-item img{
+  max-height:62px;
+}
+
+/* iPad portrait / tablets */
+@media (min-width:700px) and (max-width:1100px){
+  .home{
+    padding:14px 16px 18px;
+  }
+  .home-shell{
+    width:100%;
+  }
+  .hero{
+    padding:22px !important;
+    border-radius:28px;
+  }
+  .hero-main{
+    grid-template-columns:190px minmax(0,1fr) 132px;
+    gap:20px;
+  }
+  .hero-logo{
+    width:190px;
+    height:190px;
+    border-radius:22px;
+  }
+  .hero-copy h1{
+    font-size:2.7rem;
+    white-space:normal;
+  }
+  .hero-copy .place{
+    margin-top:10px;
+    font-size:1.08rem;
+  }
+  .hero-copy .mass{
+    margin-top:7px;
+    font-size:.9rem;
+  }
+  .hero-3dn{
+    width:132px;
+    height:92px;
+  }
+  .hero > .module-grid{
+    margin-top:20px !important;
+    gap:12px;
+  }
+  .hero > .module-grid .module-card{
+    min-height:88px;
+    padding:16px 20px;
+  }
+  .identity-strip{
+    padding:12px 14px;
+    justify-content:space-evenly;
+  }
+  .identity-item{
+    flex:0 1 94px;
+    min-width:72px;
+    height:76px;
+  }
+  .identity-item img{
+    max-height:56px;
+  }
+}
+
+/* iPad mais estreito / tablet pequeno */
+@media (min-width:600px) and (max-width:820px){
+  .hero-main{
+    grid-template-columns:165px minmax(0,1fr) 105px;
+    gap:16px;
+  }
+  .hero-logo{
+    width:165px;
+    height:165px;
+  }
+  .hero-copy h1{
+    font-size:2.35rem;
+  }
+  .hero-copy .place{
+    font-size:.98rem;
+  }
+  .hero-copy .mass{
+    font-size:.82rem;
+  }
+  .hero-3dn{
+    width:105px;
+    height:76px;
+  }
+}
+
+/* Celular */
+@media (max-width:599px){
+  .hero{
+    padding:16px !important;
+  }
+  .hero-main{
+    grid-template-columns:112px minmax(0,1fr);
+    gap:14px;
+    align-items:center;
+  }
+  .hero-logo{
+    width:112px;
+    height:112px;
+    padding:8px;
+    border-radius:18px;
+  }
+  .hero-copy h1{
+    font-size:1.85rem;
+    white-space:normal;
+  }
+  .hero-copy .place{
+    font-size:.88rem;
+    margin-top:7px;
+  }
+  .hero-copy .mass{
+    font-size:.72rem;
+    margin-top:5px;
+  }
+  .hero-3dn{
+    grid-column:1 / -1;
+    width:126px;
+    height:70px;
+    justify-self:center;
+    margin-top:-4px;
+  }
+  .hero > .module-grid{
+    grid-template-columns:1fr;
+    margin-top:14px !important;
+  }
+  .hero > .module-grid .module-card{
+    min-height:72px;
+    padding:14px 16px;
+  }
+  .identity-strip{
+    overflow-x:auto;
+    justify-content:flex-start;
+    -webkit-overflow-scrolling:touch;
+  }
+  .identity-strip::-webkit-scrollbar{display:none}
+  .identity-item{
+    flex:0 0 72px;
+    width:72px;
+    min-width:72px;
+    height:64px;
+  }
+  .identity-item img{
+    max-height:46px;
+  }
+}

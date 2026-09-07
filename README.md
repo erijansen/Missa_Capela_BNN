@@ -32,3 +32,17 @@ Substitua os arquivos atuais pelos arquivos desta versão e faça `Commit change
 O GitHub Pages continua configurado em:
 - Branch: `main`
 - Pasta: `/(root)`
+
+
+## Ajuste v8 — iPad vertical
+A página inicial foi redesenhada especificamente para corrigir a visualização no iPad em modo vertical.
+
+Principais mudanças:
+- logo da equipe reduzida e com tamanho controlado;
+- título e informações litúrgicas passam a ocupar uma área própria, sem ficarem espremidos;
+- logo reduzida do 3º Distrito Naval fica em uma terceira área independente;
+- os botões **Violão** e **Canto** ficam em uma linha inteira abaixo do cabeçalho, com largura equilibrada;
+- faixa de símbolos inferior permanece compacta;
+- foram criadas regras específicas para tablets entre 700 e 1100 px de largura.
+
+Objetivo: evitar quebra excessiva de palavras, botões estreitos e logos desproporcionais no Safari do iPad.

@@ -90,3 +90,19 @@ Na página inicial:
 - não substituir por uma versão horizontal maior;
 - manter a logo em bloco próprio, ao lado do título, sem diminuir a largura dos botões Violão e Canto;
 - em telas menores, reduzir proporcionalmente a logo, sem permitir que ela desloque ou comprima o conteúdo principal.
+
+
+## REGRA DE RESPONSIVIDADE PARA IPAD
+A página inicial deve ser testada prioritariamente em iPad vertical.
+
+No iPad:
+- o cabeçalho principal deve usar três áreas equilibradas:
+  1. logo da equipe;
+  2. título + Capela + celebração;
+  3. logo reduzida do 3º Distrito Naval;
+- os botões **Violão** e **Canto** devem ocupar uma segunda linha inteira, lado a lado e com largura equivalente;
+- nunca permitir que a logo do 3º DN comprima o título ou os botões;
+- evitar palavras quebradas em várias linhas, como “Cifras / da / Missa”;
+- evitar botões estreitos e altos;
+- o layout deve permanecer visualmente horizontal e fluido dentro do painel, mesmo no iPad em modo vertical;
+- usar breakpoints específicos para tablets, e não tratar o iPad simplesmente como desktop ou celular.
