@@ -1,48 +1,16 @@
-# Cifras da Missa — Capela Militar BNN
+# Missa — 27SET2026
 
-Versão visual atualizada com a logo reduzida do Comando do 3º Distrito Naval.
+HTML otimizado para uso durante a missa, com **uma música cifrada por tela**, sem rolagem interna.
 
-## Alteração principal desta versão
-A logo horizontal grande do 3º Distrito Naval foi substituída pela imagem:
+## Publicação no GitHub Pages
+1. Envie os arquivos deste diretório para a raiz do repositório.
+2. Confirme que o arquivo principal se chama `index.html`.
+3. Em **Settings → Pages**, publique a branch `main` a partir da raiz (`/`).
 
-`3B2 - LogoCom3DN_Reduzida-Branca.png`
+## Uso
+- **Repertório** abre o menu das 22 músicas.
+- **Anterior/Próxima** muda de música.
+- Deslize horizontalmente para trocar de música em dispositivos touch.
+- O tamanho da fonte é calculado automaticamente para que a música inteira caiba na tela.
 
-Ela é utilizada no canto superior direito da página inicial.
-
-## Por que esta versão foi ajustada
-A logo horizontal anterior ocupava largura excessiva e alterava o equilíbrio do painel principal.  
-Nesta versão:
-- a área do título e da logo foi separada da área dos botões;
-- a logo do 3º DN não reduz mais a largura dos botões **Violão** e **Canto**;
-- a logo se adapta a telas menores;
-- o restante do layout aprovado foi mantido.
-
-## Mantido
-- Módulo Violão
-- Módulo Canto
-- transposição automática
-- botão para voltar à escolha do módulo
-- símbolo circular da Marinha na faixa inferior
-- favicon e imagem de compartilhamento
-- repertório e cifras existentes
-
-## Publicação
-Substitua os arquivos atuais pelos arquivos desta versão e faça `Commit changes`.
-
-O GitHub Pages continua configurado em:
-- Branch: `main`
-- Pasta: `/(root)`
-
-
-## Ajuste v8 — iPad vertical
-A página inicial foi redesenhada especificamente para corrigir a visualização no iPad em modo vertical.
-
-Principais mudanças:
-- logo da equipe reduzida e com tamanho controlado;
-- título e informações litúrgicas passam a ocupar uma área própria, sem ficarem espremidos;
-- logo reduzida do 3º Distrito Naval fica em uma terceira área independente;
-- os botões **Violão** e **Canto** ficam em uma linha inteira abaixo do cabeçalho, com largura equilibrada;
-- faixa de símbolos inferior permanece compacta;
-- foram criadas regras específicas para tablets entre 700 e 1100 px de largura.
-
-Objetivo: evitar quebra excessiva de palavras, botões estreitos e logos desproporcionais no Safari do iPad.
+Fonte do repertório: documento **MISSA - 27SET2026**.
