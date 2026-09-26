@@ -1,16 +1,12 @@
-# Missa — 27SET2026
+# Cancioneiro da Missa — 27SET2026
 
-HTML otimizado para uso durante a missa, com **uma música cifrada por tela**, sem rolagem interna.
+Aplicação HTML estática para uso em tablet durante a missa.
 
-## Publicação no GitHub Pages
-1. Envie os arquivos deste diretório para a raiz do repositório.
-2. Confirme que o arquivo principal se chama `index.html`.
-3. Em **Settings → Pages**, publique a branch `main` a partir da raiz (`/`).
+## Arquitetura
+- **Missa do Dia**: repertório principal de 27SET2026, na ordem litúrgica (músicas 01 a 14).
+- **Por Tema**: biblioteca completa organizada por momento da missa (Entrada, Ofertório, Comunhão etc.), incluindo Extras.
+- Cada música cifrada é ajustada automaticamente para caber em uma única tela, evitando rolagem durante a execução.
+- Navegação por botões Anterior/Próxima e gesto lateral.
 
-## Uso
-- **Repertório** abre o menu das 22 músicas.
-- **Anterior/Próxima** muda de música.
-- Deslize horizontalmente para trocar de música em dispositivos touch.
-- O tamanho da fonte é calculado automaticamente para que a música inteira caiba na tela.
-
-Fonte do repertório: documento **MISSA - 27SET2026**.
+## GitHub Pages
+Use `index.html` na raiz do repositório e mantenha `.nojekyll`.
